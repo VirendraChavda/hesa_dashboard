@@ -5,9 +5,6 @@ install:
 format:	
 	black *.py 
 
-process:
-	python Convert_Data.py
-
 dashboard:
 	python .app/HESA_Dashboard.py
 
@@ -23,4 +20,4 @@ push-hub:
 
 deploy: hf-login push-hub
 
-all: install format process dashboard deploy
+all: install format dashboard deploy
