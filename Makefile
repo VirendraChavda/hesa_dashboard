@@ -13,7 +13,7 @@ hf-login:
 
 push-hub: 
 	huggingface-cli upload VirendraChavda/Hesa_Dashboard ./app --repo-type=space --commit-message="Sync App files"
-	huggingface-cli upload VirendraChavda/Hesa_Dashboard ./Data/updated.csv --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload VirendraChavda/Hesa_Dashboard ./Data --repo-type=space --commit-message="Sync Model"
 
 deploy: hf-login push-hub
 
