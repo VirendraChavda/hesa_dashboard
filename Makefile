@@ -6,7 +6,7 @@ format:
 	black *.py 
 
 dashboard:
-	python .app/HESA_Dashboard.py
+	streamlit run .app/graph.py
 
 hf-login: 
 	pip install -U "huggingface_hub[cli]"
