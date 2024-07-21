@@ -1,1 +1,7 @@
-
+pandas
+numpy
+matplotlib
+plotly.express
+streamlit
+google-api-python-client
+openpyxl
