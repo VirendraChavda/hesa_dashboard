@@ -5,35 +5,28 @@ install:
 format:	
 	black *.py 
 
-train:
-	python train.py
+process:
+	python Convert_Data.py
 
-eval:
-	echo "## Model Metrics" > report.md
-	cat ./Results/metrics.txt >> report.md
-	
-	echo '\n## Confusion Matrix Plot' >> report.md
-	echo '![Confusion Matrix](./Results/model_results.png)' >> report.md
-	
-	cml comment create report.md
+dashboard:
+	python .app/HESA_Dashboard.py
 		
-update-branch:
+update-main:
 	git config --global user.name $(USER_NAME)
 	git config --global user.email $(USER_EMAIL)
 	git commit -am "Update with new results"
-	git push --force origin HEAD:update
+	git push --force origin HEAD:main
 
 hf-login: 
 	pip install -U "huggingface_hub[cli]"
-	git pull origin update
-	git switch update
+	git pull origin main
+	git switch main
 	huggingface-cli login --token $(HF) --add-to-git-credential
 
 push-hub: 
-	huggingface-cli upload kingabzpro/Drug-Classification ./App --repo-type=space --commit-message="Sync App files"
-	huggingface-cli upload kingabzpro/Drug-Classification ./Model /Model --repo-type=space --commit-message="Sync Model"
-	huggingface-cli upload kingabzpro/Drug-Classification ./Results /Metrics --repo-type=space --commit-message="Sync Model"
+	huggingface-cli upload VirendraChavda/Drug_Classifier ./app --repo-type=space --commit-message="Sync App files"
+	huggingface-cli upload VirendraChavda/Drug_Classifier ./Data/updated.csv --repo-type=space --commit-message="Sync Model"
 
 deploy: hf-login push-hub
 
-all: install format train eval update-branch deploy
+all: install format process dashboard deploy
