@@ -3,7 +3,7 @@ install:
 		pip install -r requirements.txt
 
 dashboard:
-	streamlit run .app/graph.py
+	streamlit run .app/HESA_Dashboard.py
 
 hf-login: 
 	pip install -U "huggingface_hub[cli]"
