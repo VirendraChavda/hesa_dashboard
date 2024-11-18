@@ -39,9 +39,7 @@ The dataset used in this project contains financial and operational metrics for 
 - <strong>Expenditures</strong>: Staff costs, total expenditure, and surplus/deficit.
 - <strong>Student Statistics</strong>: Total students, UK students, EU students, and international students.
 
-<p align="justify">
 The dataset is pre-processed and formatted in the `University Benchmarking Dashboard - Formatted.xlsx` file, enabling seamless integration with the dashboard. Filter options such as country, region, and income group are provided for exploratory analysis.
-</p>
 
 ---
 
