@@ -28,38 +28,14 @@ The project leverages technologies like <strong>Streamlit</strong> for building 
 
 ---
 
-## Installation
-
-To set up and use this project, follow these steps:
-
-1. **Install Python**:
-   - Download Python from [Python.org](https://www.python.org/downloads/) and install it.
-
-2. **Install Anaconda**:
-   - Download the Anaconda Distribution from [Anaconda](https://www.anaconda.com/download/success) and install it.
-
-3. **Initialize the Environment**:
-   - Open the project folder and run the `Initialisation.py` file to install all necessary dependencies:
-     ```bash
-     python Initialisation.py
-     ```
-   - This step may take up to 5 minutes.
-
-4. **Launch the Dashboard**:
-   - After installation, run the `HESA Dashboard.exe` file to start the dashboard in your default web browser.
-
-For detailed instructions, refer to the [Installation Guide](./Installation%20guide.docx).
-
----
-
 ## Data
 <p align="justify">
 The dataset used in this project contains financial and operational metrics for UK higher education institutions, including:
 </p>
 
-- **Income Sources**: Tuition fees, research grants, funding body grants, and more.
-- **Expenditures**: Staff costs, total expenditure, and surplus/deficit.
-- **Student Statistics**: Total students, UK students, EU students, and international students.
+- <strong>Income Sources</strong>: Tuition fees, research grants, funding body grants, and more.
+- <strong>Expenditures</strong>: Staff costs, total expenditure, and surplus/deficit.
+- <strong>Student Statistics</strong>: Total students, UK students, EU students, and international students.
 
 <p align="justify">
 The dataset is pre-processed and formatted in the `University Benchmarking Dashboard - Formatted.xlsx` file, enabling seamless integration with the dashboard. Filter options such as country, region, and income group are provided for exploratory analysis.
@@ -69,22 +45,22 @@ The dataset is pre-processed and formatted in the `University Benchmarking Dashb
 
 ## Features
 
-1. **Interactive Filters**:
+1. <strong>Interactive Filters</strong>:
    - Select data by country, region, establishment group, and other attributes.
    - Compare institutions across multiple dimensions.
 
-2. **Dynamic Visualizations**:
+2. <strong>Dynamic Visualizations</strong>:
    - Line charts for trends in income, expenditure, and student statistics.
    - Pie charts for visualizing income and fee distributions.
 
-3. **Mode Selection**:
+3. <strong>Mode Selection</strong>:
    - `Normal` mode for a single dataset analysis.
    - `Comparison` mode for side-by-side analysis of datasets.
 
-4. **Google Drive Integration**:
+4. <strong>Google Drive Integration</strong>:
    - Comments and feedback are stored and managed securely using the Google Drive API.
 
-5. **Customizable Metrics**:
+5. <strong>Customizable Metrics</strong>:
    - Users can explore percentages, absolute values, and trends.
 
 ---
@@ -96,8 +72,8 @@ The dataset is pre-processed and formatted in the `University Benchmarking Dashb
 - Added computed columns for percentage growth and relative contributions.
 
 ### 2. Dashboard Implementation
-- Developed using **Streamlit** for a responsive user interface.
-- **Plotly** visualizations for interactivity and clarity.
+- Developed using <strong>Streamlit</strong> for a responsive user interface.
+- <strong>Plotly</strong> visualizations for interactivity and clarity.
 
 ### 3. Cloud Integration
 - Integrated with Google Drive API to handle user comments and feedback.
@@ -105,11 +81,11 @@ The dataset is pre-processed and formatted in the `University Benchmarking Dashb
 ---
 
 ## Future Work
-- **Advanced Analytics**:
+- <strong>Advanced Analytics</strong>:
   - Add predictive modeling for financial metrics using machine learning.
-- **Enhanced Visualizations**:
+- <strong>Enhanced Visualizations</strong>:
   - Include more detailed graphs and heatmaps for better insights.
-- **Expanded Scope**:
+- <strong>Expanded Scope</strong>:
   - Incorporate more datasets, such as student satisfaction scores or employment statistics.
 
 ---
